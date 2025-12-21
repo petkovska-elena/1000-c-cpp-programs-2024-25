@@ -6,36 +6,21 @@
 
 /* Збир на целите броеви не поголеми од n */
 
+#include <iostream>
+using namespace std;
+
 int zbirN(int n) {
 	if (n == 0)
 		return 0;
 	else
-		return n + zbirN(n - 1);
+		return n + zbirN (n -1);
 }
 
+int main() {
+	int n;
+	cout << "Vnesi broj: ";
 
-
-/* Печатење ѕвезди (рекурзивно) */
-
-void dzvezdi(int n) {
-	if (n > 0) {
-		cout << '*';
-		dzvezdi(n - 1);
-	}
-	else
-		cout << endl;
+	cin >> n;
+	cout << "Zbirot e: " << zbirN(n) << endl;
+	return 0;
 }
-
-
-
-/* Збир на цифри на број */
-
-int zbirCifri(int n) {
-	if (n < 10)
-		return n;
-	else
-		return n % 10 + zbirCifri(n / 10);
-}
-
-
-
