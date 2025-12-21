@@ -10,7 +10,8 @@
 using namespace std;
 
 void niza(int n) {
-	if (n > 0) {
+	if (n > 0)
+	{
 		cout << n << " ";
 		niza(n - 1);
 	}
@@ -18,10 +19,10 @@ void niza(int n) {
 
 int main() {
 	int n;
-	cout << "Vnesi broj n: ";
+	cout << "Vnesi broj: ";
 	cin >> n;
 
-	cout << "Opagacka niza od " << n << " e: ";
+	cout << "Opagjackata niza od " << n << " e: ";
 	niza(n);
 	cout << endl;
 
