@@ -9,11 +9,11 @@
 #include <iostream>
 using namespace std;
 
-long fibonachi(long n) {
+long fibonnachi(long n) {
 	if (n == 1 || n == 2)
-		return 1;   // основен случај
+		return 1;                                      // osnoven sluchaj
 	else
-		return fibonachi(n - 1) + fibonachi(n - 2); // рекурзивен случај
+		return fibonnachi(n - 1) + fibonnachi(n - 2);  // rekurziven sluchaj
 }
 
 int main() {
@@ -22,8 +22,9 @@ int main() {
 	cin >> n;
 
 	cout << "Fibonachievata niza do " << n << "-tiot clen e: ";
-	for (int i = 1; i <= n; i++) {
-		cout << fibonachi(i) << " ";
+	for (int i = 1; i <= n; i++)
+	{
+		cout << fibonnachi(i) << " ";
 	}
 	cout << endl;
 
