@@ -9,11 +9,12 @@
 #include <iostream>
 using namespace std;
 
-void niza(int n) {
-	if (n > 0) {
-		cout << n;       // печати при опаѓање
-		niza(n - 1);     // рекурзивен повик со n-1
-		cout << n;       // печати при растење
+int niza(int n) {
+	if (n > 0)
+	{
+		cout << n << " ";    // pecati pri opagjanje
+		niza(n - 1);         // rekurziven povik so n - 1
+		cout << n << " ";    // pecati pri rastenje
 	}
 }
 
