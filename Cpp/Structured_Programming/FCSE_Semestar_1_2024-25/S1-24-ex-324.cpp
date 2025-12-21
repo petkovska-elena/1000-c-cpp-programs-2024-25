@@ -10,9 +10,10 @@
 using namespace std;
 
 void niza(int n) {
-	if (n > 0) {
-		niza(n - 1);   // рекурзивен повик со помало n
-		cout << n;     // печатење на бројот откако ќе се врати рекурзијата
+	if (n > 0)
+	{
+		niza(n - 1);      // rekurziven povik so pomalo n
+		cout << n << " ";        // pecatenje na brojot otkako ke se vrati rekurzijata
 	}
 }
 
@@ -21,6 +22,7 @@ int main() {
 	cout << "Vnesi broj n: ";
 	cin >> n;
 
+	cout << "Niza vo rastecki redosled od " << n << " " << "e: ";
 	niza(n);
 	cout << endl;
 
