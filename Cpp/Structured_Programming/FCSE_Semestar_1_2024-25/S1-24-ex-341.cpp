@@ -1,0 +1,26 @@
+//
+// Created by Elena Petkovska on 14.8.25.
+//
+
+// Kvalifikaciski Zadaci
+
+/* Прочитај еден број N. Испечати го збирот на сите негови делители што завршуваат на цифрата 3. */
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int N, sum = 0;
+	cin >> N;
+
+	for (int i = 1; i <= N; i++)
+	{
+		if (N % i == 0 && i % 10 == 3)
+		{
+			sum += i;
+		}
+	}
+
+	cout << sum << endl;
+	return 0;
+}
