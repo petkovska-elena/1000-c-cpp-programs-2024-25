@@ -9,8 +9,8 @@ using namespace std;
 
 int main()
 {
-    cout << "Abe kaj si be " << "Batko?" << endl;
-    cout << "Sho prajsh be Batko?" << endl;
+    cout << "Zdravo " << "!" << endl;
+    cout << "Kako si?" << endl;
     return 0;
 }
 
